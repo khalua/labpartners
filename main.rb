@@ -1,5 +1,6 @@
 names = "Adi Adrian Alex Anthony Ben Brian Bryan Chloe Eric Jane Jeff Jillian Joe Luke Matt Nick Nicky Ralph Ron Ryan Sandip Sean Shefali Simon Stephen".split(' ').shuffle
 
+puts `clear`
 print "Number of people per group: "
 size = gets.to_i
 
@@ -22,7 +23,7 @@ while names.length > 0
       puts "Group #{group_numb}:"
       puts a
       names = names - a
-      if names.length > size
+      if names.length >= size
         puts ' '
       else
         nil
